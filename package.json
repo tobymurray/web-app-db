@@ -1,6 +1,6 @@
 {
   "name": "web-app-db",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic 2-user (admin and unprivileged user) PostgreSQL configuration for web application",
   "main": "index.js",
   "scripts": {
