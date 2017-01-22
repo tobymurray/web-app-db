@@ -1,0 +1,22 @@
+{
+  "name": "web-app-db",
+  "version": "1.0.0",
+  "description": "Basic 2-user (admin and unprivileged user) PostgreSQL configuration for web application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobymurray/web-app-db.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tobymurray/web-app-db/issues"
+  },
+  "homepage": "https://github.com/tobymurray/web-app-db#readme",
+  "dependencies": {
+    "pg-promise": "^5.5.2"
+  }
+}
