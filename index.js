@@ -6,18 +6,18 @@ var appConfig = {
   defaultDatabase: "postgres", // Default postgres database, usually 'postgres'
   superuser: "postgres", // Superuser for postgres server e.g. 'postgres'
   superuserPassword: "password",
-  databaseRootName: "test_app", // Prefix for databases to be created - e.g. "_test" is appended to this to create the test database
-  databaseSchemaName: "test_app", // Name of the schema to replace the public schema in the created databases
-  adminName: "test_app_admin", // App administrator's name
+  databaseRootName: "min_auth", // Prefix for databases to be created - e.g. "_test" is appended to this to create the test database
+  databaseSchemaName: "min_auth", // Name of the schema to replace the public schema in the created databases
+  adminName: "min_auth_admin", // App administrator's name
   adminPassword: "admin_password", // App administrator's password
-  userName: "test_app_user", // App user's name
+  userName: "min_auth_user", // App user's name
   userPassword: "user_password" // App user's password
 }
 
 var dbConfig = new DbConfig(appConfig);
 
 var serverConfig = {
-  host: '192.168.1.6', // Host for the PostgreSQL server
+  host: '192.168.99.100', // Host for the PostgreSQL server
   port: 5432, // Port on the configured host where PostgreSQL is accessible
   max: 10, // Max number of connections
   poolIdleTimeout: 1000 // Amount of time before an idle client times out and disconnects
