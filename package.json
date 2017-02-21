@@ -2,7 +2,10 @@
   "name": "web-app-db",
   "version": "1.0.1",
   "description": "Basic 2-user (admin and unprivileged user) PostgreSQL configuration for web application",
-  "main": "index.js",
+  "bin": {
+    "web-app-db": "bin/web-app-db.js"
+  },
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/tobymurray/web-app-db#readme",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "pg-promise": "^5.5.2"
   }
 }
