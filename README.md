@@ -42,6 +42,13 @@ DB_HOST=192.168.1.10
 
 # Port the database server is exposing for the database (defaults to 5432)
 DB_PORT=5432
+
+# The default database on your PostgreSQL server - usually postgres
+DEFAULT_DATABASE=postgres
+
+# The superuser you've initialized your server with - usually postgres
+DB_SUPERUSER_NAME=postgres
+DB_SUPERUSER_PASSWORD=password
 ```
 
 In the same directory as the `.web-app-db`, invoke this module with `web-app-db`.
