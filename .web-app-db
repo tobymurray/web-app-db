@@ -1,0 +1,27 @@
+# The database user used by the application while it's running
+DB_USER=min_auth_user
+DB_PASSWORD=user_password
+
+# The database user used to deploy the application
+DB_ADMIN=min_auth_admin
+DB_ADMIN_PASSWORD=admin_password
+
+# The root name of the database - _production, _development, and _test will be appended
+DB_NAME=min_auth
+
+# The schema name to use with the databases, if left empty it will default to the database root name
+DB_SCHEMA_NAME=min_auth
+
+# Host where the database server is running (IP address)
+DB_HOST=127.0.0.1
+
+# Port the database server is exposing for the database (defaults to 5432)
+DB_PORT=5432
+
+# Whether to enable the citext extension (see https://www.postgresql.org/docs/current/static/citext.html)
+CITEXT_EXTENSION=true
+
+DEFAULT_DATABASE=postgres
+
+DB_SUPERUSER_NAME=postgres
+DB_SUPERUSER_PASSWORD=password
