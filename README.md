@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/tobymurray/web-app-db.svg?branch=master)](https://travis-ci.org/tobymurray/web-app-db)
-
-# web-app-db
+# web-app-db [![Build Status](https://travis-ci.org/tobymurray/web-app-db.svg?branch=master)](https://travis-ci.org/tobymurray/web-app-db)
 Basic PostgreSQL database structure for web app development. What this gives you:
 
 - 3 databases, one for development, one for testing, and one for production
