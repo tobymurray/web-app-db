@@ -15,8 +15,12 @@ Basic PostgreSQL database structure for web app development. What this gives you
 2. Easier deployment: It seems counterintuitive, but the separation of concerns actually makes things more clear. You never have to worry if your database user has the right privileges - if you're doing administrative work, use the administrator. If you're not, don't.
 
 ## Installation
+### To install the published NPM module
+`npm -g install web-app-db` or
+`yarn global add web-app-db`
 
-`npm -g install`
+### To install local module after cloning the repository
+`npm -g install .`
 
 ## Usage
 
