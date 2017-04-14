@@ -1,0 +1,18 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js: 
+  - "node"
+cache: yarn
+
+services:
+  - postgresql
+
+addons:
+  postgresql: "9.5"
+
+before_script:
+  - npm -g install .
+
+script:
+  - web-app-db
