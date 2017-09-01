@@ -21,6 +21,6 @@
   "homepage": "https://github.com/tobymurray/web-app-db#readme",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "pg-promise": "^6.3.5"
+    "pg-promise": "^6.5.1"
   }
 }

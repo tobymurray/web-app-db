@@ -2,10 +2,6 @@
 # yarn lockfile v1
 
 
-ap@~0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/ap/-/ap-0.2.0.tgz#ae0942600b29912f0d2b14ec60c45e8f330b6110"
-
 buffer-writer@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/buffer-writer/-/buffer-writer-1.0.1.tgz#22a936901e3029afcd7547eb4487ceb697a3bf08"
@@ -18,9 +14,13 @@ generic-pool@2.4.3:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/generic-pool/-/generic-pool-2.4.3.tgz#780c36f69dfad05a5a045dd37be7adca11a4f6ff"
 
-manakin@0.4:
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/manakin/-/manakin-0.4.7.tgz#41ca449b55bea9c4c4fecec393b9c4d63818fc3f"
+js-string-escape@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/js-string-escape/-/js-string-escape-1.0.1.tgz#e2625badbc0d67c7533e9edc1068c587ae4137ef"
+
+manakin@~0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/manakin/-/manakin-0.5.1.tgz#c4a7116f6b00df3d5f1a37ad3ca515d22065a658"
 
 object-assign@4.1.0:
   version "4.1.0"
@@ -34,9 +34,9 @@ pg-connection-string@0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/pg-connection-string/-/pg-connection-string-0.1.3.tgz#da1847b20940e42ee1492beaf65d49d91b245df7"
 
-pg-minify@0.4:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/pg-minify/-/pg-minify-0.4.2.tgz#c75b4b5878960fb09c3b9a4d4eb1036aea7ea0e3"
+pg-minify@~0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/pg-minify/-/pg-minify-0.5.3.tgz#aa09befa3cbe29fab6461bf819100e0471215011"
 
 pg-pool@1.*:
   version "1.8.0"
@@ -45,30 +45,30 @@ pg-pool@1.*:
     generic-pool "2.4.3"
     object-assign "4.1.0"
 
-pg-promise@^6.3.5:
-  version "6.3.5"
-  resolved "https://registry.yarnpkg.com/pg-promise/-/pg-promise-6.3.5.tgz#61db54e4cd269d6c7c789ee8989ae5b0aa778caa"
+pg-promise@^6.5.1:
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/pg-promise/-/pg-promise-6.5.1.tgz#d71d262978ea5a8e9ea9be1325e25e4841201c30"
   dependencies:
-    manakin "0.4"
-    pg "^6.4.0"
-    pg-minify "0.4"
-    spex "1.2"
+    manakin "~0.5.1"
+    pg "~6.4.2"
+    pg-minify "~0.5.3"
+    spex "~1.2.0"
 
 pg-types@1.*:
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/pg-types/-/pg-types-1.12.0.tgz#8ad3b7b897e3fd463e62de241ad5fc640b4a66f0"
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/pg-types/-/pg-types-1.12.1.tgz#d64087e3903b58ffaad279e7595c52208a14c3d2"
   dependencies:
-    ap "~0.2.0"
     postgres-array "~1.0.0"
     postgres-bytea "~1.0.0"
     postgres-date "~1.0.0"
     postgres-interval "^1.1.0"
 
-pg@^6.4.0:
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/pg/-/pg-6.4.1.tgz#3eabd8ca056814437c769f17ff7a0c36ac7023c5"
+pg@~6.4.2:
+  version "6.4.2"
+  resolved "https://registry.yarnpkg.com/pg/-/pg-6.4.2.tgz#c364011060eac7a507a2ae063eb857ece910e27f"
   dependencies:
     buffer-writer "1.0.1"
+    js-string-escape "1.0.1"
     packet-reader "0.3.1"
     pg-connection-string "0.1.3"
     pg-pool "1.*"
@@ -95,8 +95,8 @@ postgres-date@~1.0.0:
   resolved "https://registry.yarnpkg.com/postgres-date/-/postgres-date-1.0.3.tgz#e2d89702efdb258ff9d9cee0fe91bd06975257a8"
 
 postgres-interval@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/postgres-interval/-/postgres-interval-1.1.0.tgz#1031e7bac34564132862adc9eb6c6d2f3aa75bb4"
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/postgres-interval/-/postgres-interval-1.1.1.tgz#acdb0f897b4b1c6e496d9d4e0a853e1c428f06f0"
   dependencies:
     xtend "^4.0.0"
 
@@ -104,13 +104,13 @@ semver@4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/semver/-/semver-4.3.2.tgz#c7a07158a80bedd052355b770d82d6640f803be7"
 
-spex@1.2:
+spex@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/spex/-/spex-1.2.0.tgz#6264b3b8acbc444477f06dbb66d425c0ee1074c0"
 
 split@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/split/-/split-1.0.0.tgz#c4395ce683abcd254bc28fe1dabb6e5c27dcffae"
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/split/-/split-1.0.1.tgz#605bd9be303aa59fb35f9229fbea0ddec9ea07d9"
   dependencies:
     through "2"
 
